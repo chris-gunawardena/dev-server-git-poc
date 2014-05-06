@@ -28,8 +28,8 @@ sudo chmod +x /home/git/rmit-public.git/hooks/post-update
 echo "Add chris Public key to /home/git/.ssh/authorized_keys"
 sudo -u git -i mkdir /home/git/.ssh
 sudo -u git -i touch /home/git/.ssh/authorized_keys
-echo "ssh-rsa GIT KEY chris@gunawardena.id.au" | sudo tee -a /home/git/.ssh/authorized_keys
+echo "ssh-rsa KEY" | sudo tee -a /home/git/.ssh/authorized_keys
 
 ####LOCALLY######
-git remote add dev_server_git ssh://git@127.0.0.1:2222/home/git/rmit-public.git
-git push dev_server_git master
+#git remote add dev_server_git ssh://git@127.0.0.1:2222/home/git/rmit-public.git
+#git push dev_server_git master
